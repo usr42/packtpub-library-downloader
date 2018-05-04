@@ -61,3 +61,24 @@ Automatically download all your eBooks and videos. (See: [PacktPub Free Daily Bo
 		pip install lxml
 
 Tested working on Python 2.7.11 and Python 3.6.0 :: Anaconda 4.3.0 (64-bit)
+
+## Run with Docker
+
+### Dependencies:
+
+* Docker
+* docker-compose
+
+### Overview
+
+To run the downloader with docker run:
+```
+docker-compose run --rm downloader
+```
+
+By default this will show the help output. You can use all the parameters described above. E.g. to download books in PDF and EPUB formats and accompanying source code, run:
+```
+docker-compose run --rm downloader -e hello@world.com -p p@ssw0rd -d ~/Desktop/packt -b pdf,epub,code
+```
+
+The files are downloaded into the `packtpub_media` folder inside this repository.
