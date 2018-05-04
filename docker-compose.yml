@@ -1,7 +1,7 @@
 version: "3.2"
 services:
     downloader:
-        build: .
+        image: quay.io/usr42/packtpub-library-downloader:latest
         volumes:
             - type: bind
               source: ./packtpub_media
