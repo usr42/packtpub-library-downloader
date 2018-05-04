@@ -5,4 +5,4 @@ services:
         volumes:
             - type: bind
               source: ./packtpub_media
-              target: /home/packtpub-library-downloader/packtpub_media
+              target: /home/downloader/packtpub_media
