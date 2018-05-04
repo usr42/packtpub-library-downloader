@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+    downloader:
+        build: .
+        volumes:
+            - type: bind
+              source: ./packtpub_media
+              target: /home/packtpub-library-downloader/packtpub_media
